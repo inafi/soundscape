@@ -711,7 +711,7 @@ hr {
 
 /*prototypes*/
 .prototypes {
-    padding: 10vh 8% 6vh;
+    padding: 10vh 8% 2vh;
     /* background-image: url('../Pics/proto.png'); */
     background-size: cover;
     background-position: bottom;
@@ -754,7 +754,7 @@ hr {
 }
 
 .prototypes .slick-track {
-    height: 84vh;
+    height: 74vh;
 }
 
 .prototypes .slick .slick-center {
@@ -792,17 +792,13 @@ hr {
         0 10px 30px rgba(0, 0, 0, 0.12);
 }
 
-.prototypes .slick .item .bg.v2 {
-    height: 58vh;
-}
-
-.prototypes .slick .item .bg.v3 {
+.prototypes .slick .item .bg.v1 {
     height: 64vh;
 }
 
 .prototypes .slick .slick-center .bg {
     min-width: 70vh;
-    height: 70vh;
+    height: 55vh;
     width: 60%;
     opacity: 1;
     -webkit-transform: scale3d(1.0, 1.0, 1);
