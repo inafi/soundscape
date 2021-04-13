@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atheia</title>
+    <link rel="icon" href="Pics/favicon.png">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/fonts/fa/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="JS/home.js"></script>
+    <script>
+        if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|Silk|lge|maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i
+            .test(navigator.userAgent) ||
+            /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i
+            .test(navigator.userAgent.substr(0, 4))) {
+            $("head").append('<link rel="stylesheet" href="CSS/mobile.css">');
+        } else {
+            document.write('<script src="JS/scroll.js"><\/script>');
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-xl">
+        <div class="center">
+            <a href="#home"><span>Home</span></a>
+            <a href="#features"><span>Features</span></a>
+            <a href="#timeline"><span>Timeline</span></a>
+            <a href="#app"><span>App</span></a>
+            <a href="#funding"><span>Partners</span></a>
+            <a href="#about"><span>About</span></a>
+        </div>
+
+        <div class="wrap-icon">
+            <div class="navbartoggler" expanded="false"> <span></span> <span></span>
+                <span></span> <span></span>
+            </div>
+        </div>
+        <div class="collapse">
+            <div class="navbar-nav">
+                <a href="#home"><span>Home</span></a>
+                <a href="#features"><span>Features</span></a>
+                <a href="#timeline"><span>Timeline</span></a>
+                <a href="#app"><span>App</span></a>
+                <a href="#funding"><span>Partners</span></a>
+                <a href="#about"><span>About</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="landing" id="home">
+        <div class="row">
+            <div>
+                <div class="text-wrap">
+                    <p class="title">Atheia</p> <br>
+                    <p class="label">The Next-Gen Visual Aid, implementing state of the art technologies.</p>
+                    <a href="#features"><button>Learn More</button></a>
+                </div>
+            </div>
+            <div>
+                <img src="Pics/display/tenmotors/cad.png" class="cad">
+            </div>
+        </div>
+    </div>
+
+    <div class="features" id="features">
+        <p class="title">Innovative Features</p>
+        <div class="row">
+            <div class="col-c">
+                <i class="fal fa-head-side"></i>
+                <p class="label">Facial Recognition</p>
+                <p class="desc">Recognizes faces of people you interact with everyday.</p>
+            </div>
+            <div class="col-c">
+                <i class="fal fa-book-open"></i>
+                <p class="label">Text Reader</p>
+                <p class="desc">Scan text from anywhere and have it read to you.</p>
+            </div>
+            <div class="col-c">
+                <i class="fal fa-compass"></i>
+                <p class="label">Search Mode</p>
+                <p class="desc">Actively search for objects in your vicinity and know how far they are.</p>
+            </div>
+            <div class="col-c">
+                <i class="fal fa-stopwatch"></i>
+                <p class="label">Real-Time</p>
+                <p class="desc">Results are produced within seconds through our onboard processing.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight">
+        <div class="row">
+            <div>
+                <div class="img-wrap">
+                    <img src="Pics/highlights/depth.png">
+                </div>
+            </div>
+            <div class="text" style="background-image: linear-gradient(to right, #25B5A9, #1485D4)">
+                <p class="label" style="color: #FDBE3D;">Real-Time Stereo Processing</p>
+                <p class="desc" style="color: #000;">
+                    Our device can process a stereo live stream in real-time allowing us to actively locate objects in
+                    3D space. We do this by creating a depth map, which can retrieve the distances to objects in the
+                    picture, which is key to our search mode.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="product row">
+        <div class="left">
+            <div class="feature">
+                <p class="label">On Board Processing</p>
+                <p class="desc">
+                    Processing is done locally on the device instead of through cloud services to get faster and more
+                    reliable coverage anywhere you go.
+                </p>
+                <div class="icon-wrap">
+                    <i class="fal fa-microchip"></i>
+                </div>
+            </div>
+            <div class="feature">
+                <p class="label">Long Battery Life</p>
+                <p class="desc">
+                    Our low power and highly efficient ARM processor can run for extended periods of time under high
+                    load.
+                </p>
+                <div class="icon-wrap">
+                    <i class="fal fa-battery-full fa-rotate-270"></i>
+                </div>
+            </div>
+            <div class="feature">
+                <p class="label">GPS Tracking</p>
+                <p class="desc">
+                    Using an on-board GPS, the Atheia tracks which locations the user frequents the most often, using
+                    this information to say where
+                    specific objects were last seen.
+                </p>
+                <div class="icon-wrap">
+                    <i class="fal fa-map-marker-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="img-wrap">
+            <img src="Pics/display/tenmotors/features.png">
+        </div>
+        <div class="right">
+            <div class="feature">
+                <div class="icon-wrap">
+                    <i class="fal fa-volume-up"></i>
+                </div>
+                <p class="label">Built-In Audio</p>
+                <p class="desc">
+                    All audio output and descriptions are announced by the the crisp speaker embedded in the device,
+                    allowing for a clear and
+                    immersive audio experience.
+                </p>
+            </div>
+            <div class="feature">
+                <div class="icon-wrap">
+                    <i class="fal fa-cog"></i>
+                </div>
+                <p class="label">Easy Setup</p>
+                <p class="desc">
+                    The device requires little to no initial setup, however adding faces to your device will require
+                    some manual input through the app.
+                </p>
+            </div>
+            <div class="feature">
+                <div class="icon-wrap">
+                    <i class="fal fa-microphone"></i>
+                </div>
+                <p class="label">Voice Assistant</p>
+                <p class="desc">
+                    All commands can be issued via voice commands, simplifying the operation of the device and allowing
+                    for a hands-free operation to maximize the ease of use.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight">
+        <div class="row">
+            <div class="text" style="background-image: linear-gradient(to left, #BB5BBC, #BB5BBC)">
+                <p class="label" style="color: #293b81;">State of the Art Computer Vision</p>
+                <p class="desc">
+                    We use a combination of state of the art computer vision models, optimized to run on our device.
+                    Through our custom
+                    algorithms, we are able to increase the accuracy of the classifications by deploying machine
+                    learning techniques.
+                </p>
+            </div>
+            <div>
+                <div class="img-wrap">
+                    <img src="Pics/highlights/cv.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo row">
+        <p class="title">Demo</p>
+        <div class="left">
+            <div class="feature">
+                <p class="label">Scan</p>
+                <i class="fal fa-plus" name="scan"></i>
+                <p class="desc">
+                    Returns a list of detected objects and their frequency, sorted by closest to farthest: <br>
+                    <span>12 people, 1 handbag, 1 bottle, 5 chairs, 1 table, and 3 laptops</span>
+                </p>
+            </div>
+            <div class="feature">
+                <p class="label">Text</p>
+                <i class="fal fa-plus" name="text"></i>
+                <p class="desc">
+                    Retrieves all the text and states which objects the text is on: <br>
+                    <span>The person says nc state and adidas</span>
+                </p>
+            </div>
+            <div class="feature">
+                <p class="label">Facial Recognition</p>
+                <i class="fal fa-plus" name="face"></i>
+                <p class="desc">
+                    Recognizes specific people that the user can set up. Returns people and their
+                    relative position to you: <br>
+                    <span>Michael is to the left, Dan is in the center, Martha is to the right</span>
+                </p>
+            </div>
+        </div>
+        <div class="img-wrap">
+            <img src="Pics/demo/class-scan.jpg" name="scan">
+            <img src="Pics/demo/class-search.jpg" name="search">
+            <img src="Pics/demo/class-text.jpg" name="text">
+            <img src="Pics/demo/class-face.jpg" name="face">
+            <img src="Pics/demo/class-last.jpg" name="last">
+            <img src="Pics/demo/class-smart.jpg" name="smart">
+            <img src="Pics/demo/class.jpg" name="base">
+        </div>
+        <div class="right">
+            <div class="feature">
+                <p class="label">Search</p>
+                <i class="fal fa-plus search" name="search"></i>
+                <p class="desc">
+                    Vibrates device in the direction of an object or describes the location: Search for bottle<br>
+                    <span>Classifications overlaid onto depth map</span>
+                </p>
+            </div>
+            <div class="feature">
+                <p class="label">Last Seen</p>
+                <i class="fal fa-plus last" name="last"></i>
+                <p class="desc">
+                    Gives the time, location, and surrounding items of the specified object: Find 'calculator' <br>
+                    <span>Calculator last seen next to 1 chair, 1 table, 4 people at 12:34 PM on June 24 at
+                        Home.</span>
+                </p>
+            </div>
+            <div class="feature">
+                <p class="label">Smart Question</p>
+                <i class="fal fa-plus smart" name="smart"></i>
+                <p class="desc">
+                    Answers specific questions about the environment: What is the color of the person's jacket?<br>
+                    <span>The color is red</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="prototypes">
+        <div class="img-wrap">
+            <img src="Pics/proto.png">
+        </div>
+        <p class="title">Prototypes</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="slick">
+                    <div class="item">
+                        <div class="bg v6" style="background-image:url(Pics/prototypes/v7phone.png)">
+                            <p class="label">V6</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg v5" style="background-image:url(Pics/prototypes/v6phone.png)">
+                            <p class="label">V5</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg v4" style="background-image:url(Pics/prototypes/v5phone.png)">
+                            <p class="label">V4</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg v3" style="background-image:url(Pics/prototypes/v3.png)">
+                            <p class="label">V3</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg v2" style="background-image:url(Pics/prototypes/v2.png)">
+                            <p class="label">V2</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="bg v1" style="background-image:url(Pics/prototypes/v1.png)">
+                            <p class="label">V1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="highlight">
+        <div class="row">
+            <div>
+                <div class="img-wrap">
+                    <img src="Pics/highlights/pcb.jpg">
+                </div>
+            </div>
+            <div class="text" style="background-color: rgb(22, 22, 22);">
+                <p class="label" style="color: #00cdcd;">Compact and Efficient Electronics</p>
+                <p class="desc">
+                    Through much user testing and feedback we have come up with a sleek and compact design to house all
+                    of our electronic components. By allowing fast charging the device can handle hours of use time
+                    after just minutes of charge.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ourtimeline" id="timeline">
+        <p class="title">Our Timeline</p>
+        <div class="pad">
+            <div class="timeline-wrap">
+                <div class="line"></div>
+                <div class="timeline">
+                    <div class="event top">
+                        <p class="label">Prototyping</p>
+                        <div class="dot"></div>
+                        <p class="date">Sep - Oct</p>
+                    </div>
+                    <div class="event bottom">
+                        <p class="label">Small Scale Testing</p>
+                        <div class="dot"></div>
+                        <p class="date">Nov</p>
+                    </div>
+                    <div class="event top">
+                        <p class="label">Feedback and Review</p>
+                        <div class="dot"></div>
+                        <p class="date">Dec</p>
+                    </div>
+                    <div class="event bottom">
+                        <p class="label">Funding Round</p>
+                        <div class="dot"></div>
+                        <p class="date">Jan - Feb</p>
+                    </div>
+                    <div class="event top">
+                        <p class="label">Large Scale Testing</p>
+                        <div class="dot"></div>
+                        <p class="date">May - Jun</p>
+                    </div>
+                    <div class="event bottom">
+                        <p class="label">Final Development</p>
+                        <div class="dot"></div>
+                        <p class="date">July - December</p>
+                    </div>
+                    <div class="event top">
+                        <p class="label">Mass Production</p>
+                        <div class="dot"></div>
+                        <p class="date">March</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <hr>
+
+    <div class="faqs" id="faqs">
+        <p class="title">Frequently Asked Questions</p>
+        <div class="row">
+            <div>
+                <p class="label">How much will it cost?</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div>
+            <div>
+                <p class="label">How will it be shipped?</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div>
+            <div>
+                <p class="label">How much is the subscription, if any?</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div>
+            <div>
+                <p class="label">What kind of objects can it detect?</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div>
+            <div>
+                <p class="label">Does it have an app?</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div>
+            <div>
+                <p class="label">How does search mode work?</p>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna
+                    aliqua.
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="app" id="app">
+        <div class="cover"></div>
+        <div class="row">
+            <div>
+                <div class="img-wrap">
+                    <img src="Pics/app/phone.png">
+                </div>
+            </div>
+            <div class="text">
+                <p class="label">Mobile App for Atheia</p>
+                <div class="wrap">
+                    <p class="desc">
+                        The Atheia app has the same high-accuracy models and features as the physical device, just
+                        optimized
+                        for the iPhone framework. Utilizing Apple's revolutionary technology in depth measurements and
+                        Augmented Reality, the Atheia app simplistically conveys a user's environment for more informed
+                        user
+                        decisions.
+                    </p>
+                    <!-- <a href="" target="_blank"><img src="Pics/app/apple.png"></a>
+                        <a href="" target="_blank"><img src="Pics/app/google.png"></a> -->
+                </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bottompage">
+        <div class="img-wrap">
+            <img src="Pics/bottom.png">
+        </div>
+        <div class="funding" id="funding">
+            <p class="title">Partners</p>
+            <!-- <p class="subtitle">Donate</p>
+        <p class="label">
+            We are a Nonprofit and our mission is to distribute these devices to as many people as
+            possible. By donating you are helping people gain more independence in their lives.
+        </p>
+        <div class="row donate">
+            <div>
+                <a href="" target="_blank">
+                    <div class="img-wrap">
+                        <img src="Pics/gofundme.jpg">
+                    </div>
+                    <p class="desc">Please Support our GoFundMe Campaign!</p>
+                </a>
+            </div>
+            <div>
+                <a href="" target="_blank">
+                    <div class="img-wrap">
+                        <img src="Pics/indiegogo.png">
+                    </div>
+                    <p class="desc">Please Support our Indiegogo Campaign!</p>
+                </a>
+            </div>
+        </div> -->
+            <!-- <p class="subtitle">Partners</p> -->
+            <div class="row partners">
+                <!-- <img src="Pics/partners/mit.jpg"> -->
+                <a href="https://aws.amazon.com/" target="_blank">
+                    <img src="Pics/partners/aws.png">
+                </a>
+                <a href="https://maximus.com/foundation" target="_blank">
+                    <img src="Pics/partners/maximus.jpg">
+                </a>
+                <a href="https://www.tjpartnershipfund.org/" target="_blank">
+                    <img src="Pics/partners/tj.png">
+                </a>
+                <a href="https://www.ultralytics.com/" target="_blank">
+                    <img src="Pics/partners/ultralytics.png">
+                </a>
+                <a href="https://www.nib.org/" target="_blank">
+                    <img src="Pics/partners/nib.png">
+                </a>
+                <a href="https://www.vdbvi.org/" target="_blank">
+                    <img src="Pics/partners/vdbvi.png">
+                </a>
+                <!-- <img src="Pics/partners/nib.png">
+                <img src="Pics/partners/vdbvi.png"> -->
+                <!-- <img src="Pics/partners/nsf.png"> -->
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="about" id="about">
+            <p class="title">Meet The Team</p>
+            <p class="subtitle">We are a group of high school students hoping to make lives better.</p>
+            <div class="row">
+                <div>
+                    <div class="img-wrap">
+                        <img src="Pics/team/eugene.jpg">
+                    </div>
+                    <p class="label">Eugene Choi</p>
+                    <p class="desc">Co-Founder</p>
+                </div>
+                <div>
+                    <div class="img-wrap">
+                        <img src="Pics/team/pranav.jpeg">
+                    </div>
+                    <p class="label">Pranav Ravella</p>
+                    <p class="desc">Co-Founder</p>
+                </div>
+                <div>
+                    <div class="img-wrap">
+                        <img src="Pics/team/nafi.png">
+                    </div>
+                    <p class="label">Irfan Nafi</p>
+                    <p class="desc">Co-Founder</p>
+                </div>
+                <div>
+                    <div class="img-wrap">
+                        <img src="Pics/team/raffu.jpeg">
+                    </div>
+                    <p class="label">Raffu Khondaker</p>
+                    <p class="desc">Co-Founder</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="b6" id="contact">
+        <p class="title">Contact Us</p>
+    </div> -->
+
+    <div class="foot-wrap">
+        <footer>
+            <p class="copy" id="contact">
+                Contact us at <a href="mailto:projectatheia@gmail.com" target="_blank">projectatheia@gmail.com</a><br>
+                Copyright © 2021 Atheia. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+<!-- 
+Developed by Irfan Nafi
+-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TKDSYK6M3R"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TKDSYK6M3R');
+</script>
+
+</html>

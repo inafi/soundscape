@@ -1,0 +1,197 @@
+.product img {
+    animation: none;
+}
+
+.prototypes .slick-prev,
+.prototypes .slick-next {
+    display: none !important;
+}
+
+@media only screen and (orientation:portrait) {
+    .features,
+    .ourtimeline,
+    .about,
+    .product,
+    .funding,
+    .faqs,
+    .demo {
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+    }
+
+    .landing {
+        padding: 7vh 2% 0vh;
+    }
+
+    .landing .row>div {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .landing .title {
+        font-size: 10vh;
+        line-height: 10vh;
+    }
+
+    .landing .text-wrap {
+        padding-bottom: 2vh;
+    }
+
+    .features .label {
+        font-size: 3vh;
+    }
+
+    .features .desc {
+        font-size: 2vh;
+    }
+
+    .cad {
+        max-width: 90vw;
+    }
+
+    .highlight .row>div {
+        width: 100%;
+        min-width: 0;
+        flex: unset;
+    }
+
+    .highlight .label {
+        padding-top: 2vh;
+    }
+
+    .highlight .desc {
+        padding-bottom: 3vh;
+    }
+
+    .product {
+        padding: 2vh 3%;
+    }
+
+    .product img {
+        min-width: 0;
+        width: 80%;
+        margin-bottom: 3vh;
+    }
+
+    .demo {
+        padding: 12vh 8% 0vh;
+    }
+
+    .demo .title {
+        top: 2vh;
+    }
+
+    .prototypes {
+        padding: 2vh 2% 2vh;
+    }
+
+    .prototypes .slick-track {
+        height: 60vh;
+    }
+
+    .prototypes .slick .item {
+        width: 40vh;
+    }
+
+    .prototypes .slick .item .bg.v2 {
+        height: 45vh;
+    }
+    
+    .prototypes .slick .item .bg.v3 {
+        height: 48vh;
+    }
+    
+    .prototypes .slick .slick-center .bg {
+        min-width: 40vh;
+        height: 45vh;
+        width: 30%;
+    }
+
+    .ourtimeline {
+        padding-top: 6vh;
+        padding-bottom: 6vh;
+    }
+
+    .ourtimeline .pad {
+        width: 90%;
+        margin: auto;
+    }
+
+    .app .text {
+        justify-content: center
+    }
+
+    .app .label,
+    .app .wrap {
+        width: 80% !important;
+        text-align: center;
+        margin: 0 !important;
+    }
+
+    .app .img-wrap {
+        display: none;
+    }
+
+    .demo .img-wrap {
+        min-width: 30vh;
+        margin-bottom: 4vh;
+    }
+
+    .funding .label {
+        width: 75%;
+    }
+
+    .funding .donate>div {
+        min-width: 45vh;
+    }
+
+    .funding .img-wrap {
+        height: 30vh;
+    }
+
+    .funding .donate img {
+        height: 30vh;
+    }
+
+    .funding .partners {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .funding .partners img {
+        margin: 0vh 10%;
+        height: 10vh;
+    }
+
+    .funding .partners a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .faqs .row {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .faqs .label {
+        font-size: 2.5vh;
+    }
+
+    .faqs .desc {
+        font-size: 2vh;
+    }
+
+    .about img {
+        width: auto;
+        height: 30vh;
+        border-radius: .75vh;
+    }
+}
+
+@media only screen and (orientation:landscape) {
+    .cad {
+        animation: none;
+    }
+}
