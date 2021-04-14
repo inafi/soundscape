@@ -344,10 +344,12 @@ hr {
     color: #fff;
     padding-top: 4vh;
     padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .landing .title {
-    font-size: 13vh;
+    font-size: 11vh;
     line-height: 12vh;
     text-align: left;
     font-family: "Nunito";
@@ -361,8 +363,7 @@ hr {
     font-family: "Nunito";
     display: inline-block;
     width: 80%;
-    margin-top: -1vh;
-    margin-bottom: 2vh;
+    margin-top: -2vh;
 }
 
 .landing button {
@@ -383,6 +384,8 @@ hr {
     overflow: hidden;
     margin-top: 2vh;
     transition: 0.3s;
+    width: auto;
+    width: 14vh;
 }
 
 .landing a:hover {
@@ -1249,7 +1252,7 @@ hr {
 
 .about .row>div {
     height: auto;
-    margin: 2vh;
+    margin: 2vh 5vh 0;
     min-width: 25vh;
     max-width: 28vh;
     width: 15%;
