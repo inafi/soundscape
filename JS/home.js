@@ -86,6 +86,9 @@ function initialize() {
     //Overlay
     $(".details .col-c").click(function () {
         $(this).find(".overlay").show();
+        $(".disqus").insertAfter($(this).find(".overlay iframe"));
+        $(".disqus").show();
+
         try {
             var link = $(this).find(".vid").attr("name");
             $(this).find(".vid").attr("src", link);
@@ -110,6 +113,7 @@ function initialize() {
 
     $(".overlay-cover").on("mousedown touchend", function (e) {
         $(".overlay-cover").hide();
+        $(".disqus").hide();
         $(".overlay").each(function () {
             $(this).find(".vid").attr("src", "");
         })
