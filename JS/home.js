@@ -86,7 +86,7 @@ function initialize() {
     //Overlay
     $(".details .col-c").click(function () {
         $(this).find(".overlay").show();
-        $(".disqus").insertAfter($(this).find(".overlay iframe"));
+        $(".disqus").appendTo($(this).find(".overlay"));
         $(".disqus").show();
 
         try {
