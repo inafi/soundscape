@@ -67,16 +67,6 @@ function initialize() {
             }
         }
         prev = curr;
-        var timewidth = $('.ourtimeline .timeline > :last-child').offset().left - $('.ourtimeline .timeline > :first-child')
-            .offset()
-            .left + $('.ourtimeline .timeline > :last-child').width();
-        var linewidth = timewidth - $('.ourtimeline .timeline > :first-child').width() / 2 - $(
-            '.ourtimeline .timeline > :last-child').width() / 2;
-        $(".ourtimeline .timeline-wrap").width(timewidth + "px");
-        $(".ourtimeline .timeline").width(timewidth + "px");
-        $(".ourtimeline .line").width(linewidth + "px");
-        marginleft += parseInt($(".ourtimeline .line").offset().left - $('.ourtimeline .timeline > :first-child .dot').offset().left - 0.01 * $(window).height());
-        $(".ourtimeline .line").css("transform", "translateX(" + (-1 * marginleft) + "px)")
     }, 50)
 
     //Navbar button mobile
@@ -91,6 +81,44 @@ function initialize() {
             $(".navbar-nav").css("transform", "translateY(0%)");
             $(this).attr("expanded", "true");
         }
+    })
+
+    //Overlay
+    $(".details .col-c").click(function () {
+        $(this).find(".overlay").show();
+        try {
+            var link = $(this).find(".vid").attr("name");
+            $(this).find(".vid").attr("src", link);
+        } catch (error) {}
+        try {
+            var link = $(this).find(".slides").attr("name");
+            $(this).find(".slides").attr("src", link);
+        } catch (error) {}
+        $(".overlay-cover").show();
+        setTimeout(() => {
+            $(".overlay").css("opacity", "1");
+        }, 100);
+        $("html, body").css("overflow-y", "hidden");
+        $('html, body').on('scroll touchmove mousewheel', function (e) {
+            if ($(".overlay").css("opacity") == "1") {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            }
+        })
+    })
+
+    $(".overlay-cover").on("mousedown touchend", function (e) {
+        $(".overlay-cover").hide();
+        $(".overlay").each(function () {
+            $(this).find(".vid").attr("src", "");
+        })
+        $("html, body").css("overflow-y", "auto");
+        $(".overlay").css("opacity", "0");
+        setTimeout(() => {
+            $(".overlay").hide();
+        }, 200);
+        e.preventDefault();
     })
 
     //Prototype slider
@@ -156,32 +184,5 @@ function initialize() {
 
         // console.log($(window).width() * .84, $(window).height() * 1.12, $(window).height());
     }, 100);
-
-
-    //Timelines slider
-    const slider = document.querySelector('.ourtimeline .pad');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-
-    slider.addEventListener('mousedown', (e) => {
-        isDown = true;
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-    });
-    slider.addEventListener('mouseleave', () => {
-        isDown = false;
-    });
-    slider.addEventListener('mouseup', () => {
-        isDown = false;
-    });
-    slider.addEventListener('mousemove', (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX); //scroll-fast
-        slider.scrollLeft = scrollLeft - walk;
-    });
-    
 }
 $(initialize)

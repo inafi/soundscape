@@ -111,6 +111,7 @@ nav {
     font-family: 'Metropolis', "arial";
     box-shadow: none;
     font-weight: 100;
+    z-index: 5 !important;
 }
 
 nav a {
@@ -241,6 +242,7 @@ hr {
     padding-bottom: 7vh;
 }
 
+.details .title,
 .features .title,
 .ourtimeline .title,
 .faqs .title,
@@ -385,11 +387,116 @@ hr {
     margin-top: 2vh;
     transition: 0.3s;
     width: auto;
-    width: 14vh;
+    width: 19vh;
 }
 
 .landing a:hover {
     transform: scale(1.05);
+}
+
+/*details*/
+.details {
+    padding-top: 3vh;
+    padding-bottom: 6vh;
+}
+
+.details .label {
+    text-align: center;
+    font-size: 3vh;
+    margin-top: 2vh;
+    color: #000;
+    font-weight: 100;
+}
+
+.details .desc {
+    font-size: 1.9vh;
+    margin-top: 0vh;
+}
+
+.details i {
+    text-align: center;
+    font-size: 10vh;
+    width: 100%;
+    margin-top: 1vh;
+    background: linear-gradient(to bottom right, #06D6A0, #3bb5fc, #6d3dff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s;
+}
+
+.details .row {
+    justify-content: center;
+}
+
+.details .row>div {
+    height: auto;
+    border-radius: 1vh;
+    margin: 2vh 2%;
+    min-width: 25vh;
+    width: 13%;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 2vh;
+}
+
+.details .row>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+/*Overlay*/
+.overlay-cover {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 40;
+    display: none;
+}
+
+.overlay {
+    width: 85%;
+    max-width: calc(260vh - 22%);
+    max-height: 95vh;
+    background-color: #fff;
+    position: fixed;
+    margin: auto;
+    padding: 3vh 4vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 0.75vh;
+    display: none;
+    opacity: 0;
+    transition: 0.3s;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.overlay .vid {
+    height: 40vw;
+    max-height: calc(108vh - 12%);
+    width: 100%;
+    border: 0px;
+    border-radius: 0.75vh;
+    margin-bottom: 2vh;
+}
+
+.overlay .slides {
+    height: 40vw;
+    max-height: calc(108vh - 12%);
+    width: 100%;
+    border: 0px;
+    border-radius: 0.75vh;
+}
+
+.overlay::-webkit-scrollbar {
+    width: 0px;
 }
 
 /*features*/
@@ -1092,7 +1199,7 @@ hr {
     position: relative;
 }
 
-.bottompage > .img-wrap {
+.bottompage>.img-wrap {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1105,7 +1212,7 @@ hr {
     overflow: hidden;
 }
 
-.bottompage > .img-wrap img {
+.bottompage>.img-wrap img {
     width: 100%;
     min-width: 170vh;
 }
