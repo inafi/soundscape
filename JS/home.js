@@ -90,12 +90,8 @@ function initialize() {
         $(".disqus").show();
 
         try {
-            var link = $(this).find(".vid").attr("name");
-            $(this).find(".vid").attr("src", link);
-        } catch (error) {}
-        try {
-            var link = $(this).find(".slides").attr("name");
-            $(this).find(".slides").attr("src", link);
+            var link = $(this).find(".vid, .slides, .docs").attr("name");
+            $(this).find(".vid, .slides, .docs").attr("src", link);
         } catch (error) {}
         $(".overlay-cover").show();
         setTimeout(() => {
