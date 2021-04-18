@@ -587,7 +587,7 @@ hr {
 }
 
 .product .img-wrap {
-    width: 42%;
+    width: 40%;
     min-width: 55vh;
     padding-top: 1vh;
     padding-bottom: 2vh;
@@ -597,6 +597,7 @@ hr {
 .product img {
     width: 100%;
     max-width: 80vh;
+    padding: 2vh;
     margin: 0 auto;
     display: block;
     animation: bobble 4s infinite alternate;

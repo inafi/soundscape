@@ -137,7 +137,7 @@ function initialize() {
     //Demo and product adaptable
     var isBeforeProduct = false;
     setInterval(() => {
-        if ($(window).width() * .94 < $(window).height() * 1.45) {
+        if ($(window).width() * .9 < $(window).height() * 1.45) {
             if (!isBeforeProduct) {
                 $(".product .img-wrap").insertBefore(".product .left");
                 $(".product .img-wrap").css("width", "100%");
@@ -147,7 +147,7 @@ function initialize() {
         } else {
             if (isBeforeProduct) {
                 $(".product .left").insertBefore(".product .img-wrap");
-                $(".product .img-wrap").css("width", "42%");
+                $(".product .img-wrap").css("width", "40%");
                 $(".product .left").removeClass("right");
             }
             isBeforeProduct = false;
