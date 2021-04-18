@@ -571,7 +571,7 @@ hr {
 
 /*product*/
 .product {
-    padding: 12vh 3%;
+    padding: 6vh 3%;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -587,7 +587,7 @@ hr {
 }
 
 .product .img-wrap {
-    width: 35%;
+    width: 42%;
     min-width: 55vh;
     padding-top: 1vh;
     padding-bottom: 2vh;
@@ -596,7 +596,7 @@ hr {
 
 .product img {
     width: 100%;
-    max-width: 65vh;
+    max-width: 80vh;
     margin: 0 auto;
     display: block;
     animation: bobble 4s infinite alternate;
@@ -639,7 +639,7 @@ hr {
 }
 
 .product .label {
-    font-size: 2.6vh;
+    font-size: 2.3vh;
     color: #1B98E0;
     font-family: 'Metropolis';
 }
@@ -653,12 +653,13 @@ hr {
 }
 
 .product .left .desc {
-    font-size: 1.8vh;
+    font-size: 1.7vh;
     padding-right: 23%;
+    padding-left: 2vh;
 }
 
 .product .right .desc {
-    font-size: 1.8vh;
+    font-size: 1.7vh;
     padding-left: 23%;
     padding-right: 2vh;
 }
@@ -689,7 +690,7 @@ hr {
 
 .product i {
     color: #6d3dff;
-    font-size: 7vh;
+    font-size: 6vh;
     background: linear-gradient(to bottom right, #3bb5fc, #6d3dff);
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -754,7 +755,7 @@ hr {
 
 /*prototypes*/
 .prototypes {
-    padding: 10vh 8% 2vh;
+    padding: 10vh 8% 4vh;
     /* background-image: url('../Pics/proto.png'); */
     background-size: cover;
     background-position: bottom;

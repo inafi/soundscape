@@ -136,36 +136,22 @@ function initialize() {
 
     //Demo and product adaptable
     var isBeforeProduct = false;
-    var isBeforeDemo = false;
     setInterval(() => {
         if ($(window).width() * .94 < $(window).height() * 1.45) {
             if (!isBeforeProduct) {
                 $(".product .img-wrap").insertBefore(".product .left");
                 $(".product .img-wrap").css("width", "100%");
+                $(".product .left").addClass("right");
             }
             isBeforeProduct = true;
         } else {
             if (isBeforeProduct) {
                 $(".product .left").insertBefore(".product .img-wrap");
-                $(".product .img-wrap").css("width", "35%");
+                $(".product .img-wrap").css("width", "42%");
+                $(".product .left").removeClass("right");
             }
             isBeforeProduct = false;
         }
-
-        if ($(window).width() < $(window).height() * 1.6) {
-            if (!isBeforeDemo) {
-                $(".demo .img-wrap").insertBefore(".demo .left");
-                $(".demo .img-wrap").css("width", "100%");
-            }
-            isBeforeDemo = true;
-        } else {
-            if (isBeforeDemo) {
-                $(".demo .left").insertBefore(".demo .img-wrap");
-                $(".demo .img-wrap").css("width", "43%");
-            }
-            isBeforeDemo = false;
-        }
-
         // console.log($(window).width() * .84, $(window).height() * 1.12, $(window).height());
     }, 100);
 }
