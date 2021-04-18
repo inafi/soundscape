@@ -351,7 +351,7 @@ hr {
 }
 
 .landing .title {
-    font-size: 11vh;
+    font-size: 10vh;
     line-height: 12vh;
     text-align: left;
     font-family: "Nunito";
@@ -587,7 +587,7 @@ hr {
 }
 
 .product .img-wrap {
-    width: 30%;
+    width: 35%;
     min-width: 55vh;
     padding-top: 1vh;
     padding-bottom: 2vh;
@@ -750,103 +750,6 @@ hr {
     width: 80%;
     margin: auto;
     color: #fff !important;
-}
-
-/*demo*/
-.demo {
-    padding: 23vh 3% 13vh;
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.demo .title {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 12vh;
-}
-
-.demo .img-wrap {
-    width: 43%;
-    min-width: 74vh;
-    /* max-width: 56vh; */
-    height: 65vh;
-    overflow: hidden;
-    border-radius: 1vh;
-    display: grid;
-    position: relative;
-}
-
-.demo img {
-    height: 100%;
-    position: relative;
-    margin: auto;
-    border-radius: 1vh;
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-.demo .left,
-.demo .right {
-    flex: 1 1;
-    min-width: 30vh;
-    max-width: 70vh;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-flow: wrap;
-    padding: 0 !important;
-}
-
-.demo .feature {
-    width: 100%;
-    display: inline-block;
-    position: relative;
-    margin: 2vh auto;
-    padding: .5vh 3vh;
-    border-radius: 0.5vh;
-}
-
-.demo .label {
-    font-size: 2.9vh;
-    line-height: 2.9vh;
-    color: #1B98E0;
-    display: inline-block;
-    font-family: 'Metropolis';
-}
-
-.demo .desc {
-    font-size: 2vh;
-    margin-top: 0.5vh;
-    color: rgb(0, 0, 0);
-}
-
-.demo .desc span {
-    color: #6d3dff;
-}
-
-.demo i {
-    font-size: 2.9vh;
-    line-height: 2.9vh;
-    display: inline-block;
-    cursor: pointer;
-    color: #1B98E0;
-    transition: 0.3s;
-    margin-left: 1vh;
-    transform: translateY(-0.1vh);
-}
-
-.demo .active {
-    transform: translateY(-0.1vh) rotateZ(135deg);
-    color: #6d3dff;
-}
-
-.demo i:hover {
-    color: #6d3dff;
 }
 
 /*prototypes*/
@@ -1133,6 +1036,7 @@ hr {
     align-items: center;
     position: relative;
     justify-content: center;
+    padding-bottom: 7vh;
 }
 
 .app .cover {
@@ -1247,89 +1151,6 @@ hr {
     min-width: 170vh;
 }
 
-/*funding*/
-.funding {
-    padding-top: 10vh;
-    padding-bottom: 8vh;
-}
-
-.funding .row {
-    justify-content: center;
-}
-
-.funding .donate>div {
-    width: 35%;
-    margin: 2vh 1%;
-    min-width: 60vh;
-    max-width: 70vh;
-    transition: 0.3s;
-}
-
-.funding .donate>div:hover {
-    transform: scale(1.02);
-}
-
-.funding .subtitle {
-    text-align: center;
-    color: #3bb5fc;
-    font-size: 4vh;
-    font-family: 'Roboto';
-    font-weight: 100;
-}
-
-.funding .label {
-    font-size: 1.9vh;
-    text-align: center;
-    width: 45%;
-    margin: 1vh auto;
-    font-family: 'Metropolis';
-}
-
-.funding .desc {
-    text-align: center;
-    font-size: 2.3vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    color: #6d3dff;
-}
-
-.funding .img-wrap {
-    height: 35vh;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 1vh;
-    background-color: #000;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    box-shadow:
-        0 2.8px 2.2px rgba(0, 0, 0, 0.014),
-        0 6.7px 5.3px rgba(0, 0, 0, 0.018),
-        0 1.5px 1px rgba(0, 0, 0, 0.02),
-        0 2.3px 7.9px rgba(0, 0, 0, 0.012),
-        0 5px 5px rgba(0, 0, 0, 0.016),
-        0 8px 8px rgba(0, 0, 0, 0.05);
-}
-
-.funding .donate img {
-    height: 41vh;
-    min-width: 100%;
-}
-
-.funding .partners {
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-.funding .partners a {
-    margin: 3vh 5vh;
-}
-
-.funding .partners img {
-    height: 11vh;
-}
-
 /*faqs*/
 .faqs {
     padding-top: 8vh;
@@ -1365,7 +1186,7 @@ hr {
 
 /*about*/
 .about {
-    padding-top: 8vh;
+    padding-top: 6vh;
     padding-bottom: 5vh;
 }
 

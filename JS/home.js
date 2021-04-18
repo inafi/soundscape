@@ -133,22 +133,6 @@ function initialize() {
         nextArrow: '<button class="slick-next"><i class="fal fa-chevron-right"></i></button>',
         prevArrow: '<button class="slick-prev"><i class="fal fa-chevron-left"></i></button>'
     });
-    
-    //Demo
-    $(".demo i").on("click touchstart", function (e) {
-        if (e.type == "click" && isMobile)
-            return;
-        var type = $(this).attr('name');
-        $(".demo img").hide();
-        if ($(this).hasClass("active")) {
-            $(".demo img[name='base']").show();
-            $(this).removeClass("active");
-        } else {
-            $(".demo i").removeClass("active");
-            $(".demo img[name='" + type + "']").show();
-            $(this).addClass("active");
-        }
-    })
 
     //Demo and product adaptable
     var isBeforeProduct = false;
@@ -163,7 +147,7 @@ function initialize() {
         } else {
             if (isBeforeProduct) {
                 $(".product .left").insertBefore(".product .img-wrap");
-                $(".product .img-wrap").css("width", "30%");
+                $(".product .img-wrap").css("width", "35%");
             }
             isBeforeProduct = false;
         }
