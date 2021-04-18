@@ -599,7 +599,7 @@ hr {
     max-width: 65vh;
     margin: 0 auto;
     display: block;
-    animation: bobble 3s infinite alternate;
+    animation: bobble 4s infinite alternate;
 }
 
 @keyframes bobble {
@@ -689,7 +689,7 @@ hr {
 
 .product i {
     color: #6d3dff;
-    font-size: 6vh;
+    font-size: 7vh;
     background: linear-gradient(to bottom right, #3bb5fc, #6d3dff);
     -webkit-background-clip: text;
     -moz-background-clip: text;
