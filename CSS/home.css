@@ -524,14 +524,6 @@ hr {
     border-radius: 0.75vh;
 }
 
-.overlay .docs {
-    height: 40vw;
-    width: 50%;
-    max-height: calc(108vh - 12%);
-    border: 0px;
-    border-radius: 0.75vh;
-}
-
 .overlay::-webkit-scrollbar {
     width: 0px;
 }
