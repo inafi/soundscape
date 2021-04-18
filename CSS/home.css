@@ -571,7 +571,7 @@ hr {
 
 /*product*/
 .product {
-    padding: 6vh 3%;
+    padding: 12vh 3% 10vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -1027,39 +1027,20 @@ hr {
 
 /*app*/
 .app {
-    margin-top: 5vh;
-    /* background-image: url("../Pics/app/app.jpg"); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     height: auto;
+    position: relative;
     display: flex;
     align-items: center;
-    position: relative;
     justify-content: center;
+    padding-top: 7vh;
     padding-bottom: 7vh;
-}
-
-.app .cover {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent); */
 }
 
 .app .row {
     justify-content: center;
 }
 
-.app .row>div {
-    padding: 0 !important;
-    width: 50%;
-    min-width: 60vh;
-}
-
-.app .text {
+.app .text-wrap {
     display: flex;
     align-items: center;
     align-content: center;
@@ -1067,43 +1048,37 @@ hr {
     min-height: 30vh;
     height: auto;
     position: relative;
+    width: 50%;
 }
 
 .app .img-wrap {
     position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
+    width: 50%;
     height: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .app .img-wrap img {
-    width: 55vh;
+    width: 65vh;
     max-width: 95%;
-    /* position: absolute; */
-    right: 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: 5vh;
 }
 
 .app .label {
     font-size: 5vh;
     text-align: left;
-    width: 60vh;
+    width: 100%;
     padding-top: 4vh;
     font-family: 'Roboto';
     font-weight: 100;
-    margin-left: 5vh;
-}
-
-.app div.wrap {
-    width: 60vh;
-    padding-bottom: 5vh;
-    margin-left: 5vh;
 }
 
 .app .desc {
     font-size: 2.2vh;
     margin-bottom: 1vh;
+    width: 70%;
 }
 
 .app .text a {
