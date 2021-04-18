@@ -24,11 +24,11 @@ function initialize() {
                     }, 800, function () {
                         var $target = $(target);
                         $target.focus();
-                        if ($target.is(":focus")) { 
+                        if ($target.is(":focus")) {
                             return false;
                         } else {
                             $target.attr('tabindex', '-1');
-                            $target.focus(); 
+                            $target.focus();
                         };
                     });
                 }
