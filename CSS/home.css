@@ -131,9 +131,11 @@ nav span:hover {
 nav img {
     height: 5.5vh;
     background-color: #fff;
-    border-radius: 100%;
-    padding: 0.25vh;
-    transform: rotateZ(45deg);
+    position: fixed;
+    top: 0.25vh;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 nav .center {
