@@ -140,20 +140,21 @@
                         Current devices geared towards the deaf and hard of hearing, such as hearing aids, struggle to
                         localize and transmit sounds to those with severe hearing impairments. Advanced devices, like
                         cochlear implants, are invasive and cost $30,000 to $50,000. Devices that classify sounds, such
-                        as home alert systems, are not suited for mobile use and only recognize a limited number of
-                        noises, such as alarms and doorbells. The purpose of this project was to classify, localize, and
-                        transmit both environmental sounds and human speech to those with hearing impairments through a
-                        low-cost device worn around the user’s neck. We performed sound localization with the
-                        SRP-PHAT-HSDA algorithm which uses a directivity model and the Time Difference of Arrival of
-                        incoming audio captured by a 6-microphone array. Sounds are separated through Geometric Source
-                        Separation (GSS) using localization data, allowing us to isolate and stream up to 4 independent
-                        audio sources to a remote server for real-time sound classification. We classified audio using
-                        an ensemble learning network utilizing stacking and dealt with the shortage of audio training
-                        data of the ESC-50 dataset by data augmentation. The amplitude, frequency, and direction of each
-                        sound source is transmitted to the user through a wearable won around the shoulders through
-                        pairs of vibration motors. SoundScape can reliably localize three sounds under 15.49 degrees of
-                        error, classify sounds with an accuracy of 93.4%, and operate under 0.2 seconds of latency. The
-                        entire device costs $60 to manufacture and scaled through injection molds.
+                        as home alert systems, are not suited for mobile use and recognize a limited number of noises.
+                        Our goal was to convey the directionality, pitch, amplitude, sound classification, and speech
+                        recognition of multiple sound sources to those with hearing impairments through a low-cost
+                        device. We localized sounds with the SRP-PHAT-HSDA algorithm calculated on incoming audio
+                        captured by a 6-microphone array. We separated sounds through Geometric Source Separation (GSS)
+                        and beamforming, allowing us to isolate 4 audio sources. We classified each source in real-time
+                        using a stacked generalization ensemble trained on an augmented audio dataset. Background noise
+                        is filtered through dynamic noise reduction for each source. The direction along with filtered
+                        amplitude and frequency are transmitted to the user through vibration motors in a wearable
+                        device worn around the shoulders while classification and speech recognition are displayed on a
+                        watchOS app. SoundScape can reliably localize four sounds under 15.49 degrees of error, classify
+                        sounds with 93.4% accuracy, and operate under 0.2 seconds of latency. The entire device costs
+                        $60 to manufacture with inexpensive TPU filament. SoundScape is the first device assistive
+                        listening device to separate, localize, and classify multiple sound sources with the potential
+                        to protect 466 million people with hearing loss worldwide.
                     </p>
                 </div>
                 <!-- <p class="desc">Actively search for objects in your vicinity and know how far they are.</p> -->
