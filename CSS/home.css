@@ -508,6 +508,14 @@ hr {
     margin-bottom: 2vh;
 }
 
+.overlay .slides {
+    height: 40vw;
+    max-height: calc(108vh - 12%);
+    width: 100%;
+    border: 0px;
+    border-radius: 0.75vh;
+}
+
 .overlay object {
     height: 40vw;
     max-height: calc(108vh - 12%);
@@ -660,6 +668,7 @@ hr {
 .product .right .desc {
     font-size: 1.8vh;
     padding-left: 23%;
+    padding-right: 2vh;
 }
 
 .product .left .icon-wrap {
