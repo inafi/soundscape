@@ -1101,6 +1101,7 @@ hr {
     font-size: 2.2vh;
     margin-bottom: 1vh;
     width: 70%;
+    min-width: 60vh;
 }
 
 .app .text a {
@@ -1157,39 +1158,42 @@ hr {
 
 .faqs .row {
     justify-content: center;
-    margin-top: 1vh;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 .faqs .row>div {
-    height: auto;
-    margin: 2vh 2%;
+    /* height: auto; */
+    margin: 2vh;
     min-width: 35vh;
-    width: 27%;
-    padding: 1vh 2vh;
+    width: 29%;
+    padding: 2vh;
     background-color: #fff;
     border-radius: 0.75vh;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
     transition: 0.3s;
     cursor: default;
+    display: inline-block;
 }
 
 .faqs .row>div:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 2px 3px 8px;
 }
 
 .faqs .label {
     font-size: 1.9vh;
     /* border-bottom: #6d3dff solid 1px; */
-    display: inline-block;
     color: #1B98E0;
     font-family: 'Metropolis';
 }
 
 .faqs .desc {
-    font-size: 1.8vh;
+    margin-top: .3vh;
+    font-size: 1.7vh;
 }
+
+
+
 
 /*about*/
 .about {
@@ -1358,3 +1362,4 @@ nav .wrap-icon {
         padding-bottom: 2vh;
     }
 }
+

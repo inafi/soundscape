@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/flexmasonary.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="JS/home.js"></script>
     <script>
@@ -381,41 +382,41 @@
 
         <div class="faqs" id="faqs">
             <p class="title">Frequently Asked Questions</p>
-            <div class="row">
+            <div class="row grid">
                 <div>
                     <p class="label">How much will it cost?</p>
                     <p class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua.
+                        SoundScape will only cost $60. It is printed with inexpensive but flexible TPU filament which
+                        can be scaled to an injection mold for mass-production. Other parts, like the Raspberry Pi and
+                        Teensy 4.0, total to under $45.
                     </p>
                 </div>
                 <div>
                     <p class="label">What sounds can it classify and how many?</p>
                     <p class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua.
-                    </p>
-                </div>
-                <div>
-                    <p class="label">How much is the subscription, if any?</p>
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua.
+                        SoundScape can classify 50 sounds as well as recognize speech. These include emergency sounds,
+                        such as a baby crying or a car's engine, to common sounds like rain or footsteps. The user can
+                        choose specific sounds to receive a notification for.
                     </p>
                 </div>
                 <div>
                     <p class="label">Do you plan to use a server going forward?</p>
                     <p class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua.
+                        By using bluetooth streaming to transmit audio from the microphone array to the phone, we can
+                        run computational tasks on a phone. We can compile our computer
+                        vision models on CoreML to utilize an iPhone's neural engine.
                     </p>
                 </div>
                 <div>
-                    <p class="label">How do you ensure privacy?</p>
+                    <p class="label">How does background noise filtering work?</p>
+                    <p class="desc">
+                        Noise reduction is done by first recording a 0.5 second audio clip from an initial interval of
+                        10 seconds. Then we use fourier transforms to extract the frequencies from the background noise
+                        to produce a mask. Then we use the mask to filter those frequencies from the signal audio.
+                    </p>
+                </div>
+                <div>
+                    <p class="label">How have you accounted for different environments for sound classification?</p>
                     <p class="desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna
@@ -423,7 +424,8 @@
                     </p>
                 </div>
                 <div>
-                    <p class="label">What is the maximum distance it will work?</p>
+                    <p class="label">How is Sound Classification and Speech recognition done in real time?
+                    </p>
                     <p class="desc">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                         incididunt ut labore et dolore magna
@@ -431,19 +433,26 @@
                     </p>
                 </div>
                 <div>
-                    <p class="label">Where have you tested this and where will it work?</p>
+                    <p class="label">Why do you do sound classification?<p>
+                            <p class="desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna
+                                aliqua.
+                            </p>
+                </div>
+                <div>
+                    <p class="label">Where and how have you tested this?</p>
                     <p class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua.
+                        We've tested indoors, outdoors, and with varying degrees of background noise. We found that
+                        indoors, with constant background noise at 20 dB, we could localize sounds up to 35 ft away.
                     </p>
                 </div>
                 <div>
-                    <p class="label">Have you had any user testing?</p>
+                    <p class="label">In your motor pairs, how did you decide when to turn on the red or green LED?</p>
                     <p class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua.
+                        In each pair the red LED is for low frequencies and the green for high. We determined the
+                        threshold frequency by calculating the average median frequency for each audio sample in the
+                        ESC-50 dataset.
                     </p>
                 </div>
             </div>
@@ -497,11 +506,14 @@ Developed by Irfan Nafi
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G4LFGS46NR"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-G4LFGS46NR');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-G4LFGS46NR');
 </script>
 
 </html>

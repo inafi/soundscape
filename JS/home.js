@@ -154,5 +154,15 @@ function initialize() {
         }
         // console.log($(window).width() * .84, $(window).height() * 1.12, $(window).height());
     }, 100);
+
+    //Flex Masonary
+    // FlexMasonry.init('.faqs .grid', {
+    //     breakpointCols: {
+    //         'min-width: 160vh': 3,
+    //         'min-width: 140vh': 2,
+    //         'min-width: 100vh': 2,
+    //         'min-width: 30vh': 1,
+    //     }
+    // });
 }
 $(initialize)
