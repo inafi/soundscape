@@ -156,13 +156,16 @@ function initialize() {
     }, 100);
 
     //Flex Masonary
+    $(window).on("resize", function () {
+        FlexMasonry.refreshAll()
+    })
+
     FlexMasonry.init('.faqs .grid', {
         responsive: true,
         breakpointCols: {
-            'min-width: 160vh': 3,
-            'min-width: 140vh': 2,
-            'min-width: 100vh': 2,
-            'min-width: 30vh': 1,
+            'min-width: 120vh': 3,
+            'min-width: 90vh': 2,
+            'min-width: 0vh': 1,
         }
     });
 
