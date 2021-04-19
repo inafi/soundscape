@@ -194,9 +194,9 @@
             <div class="text" style="background-image: linear-gradient(to bottom right, #44cc89, #3971fb)">
                 <p class="label" style="color: #fcbc3c;">Real-Time Sound Classification</p>
                 <p class="desc" style="color: #000;">
-                    Our device can process a stereo live stream in real-time allowing us to actively locate objects in
-                    3D space. We do this by creating a depth map, which can retrieve the distances to objects in the
-                    picture, which is key to our search mode.
+                    We use a combination of state of the art computer vision models, optimized to run on our device.
+                    Through our custom algorithms, we are able to increase the accuracy of the classifications by
+                    deploying machine learning techniques.
                 </p>
             </div>
         </div>
@@ -204,6 +204,41 @@
 
     <div class="product row" id="product">
         <div class="left">
+            <div class="feature">
+                <div class="icon-wrap">
+                    <i class="fal fa-map-marker-alt"></i>
+                </div>
+                <p class="label">Sound Localization</p>
+                <p class="desc">
+                    We perform 3D sound localization with ODAS, which can localize up to four sound sources
+                    simultaneously.
+                </p>
+            </div>
+            <div class="feature">
+                <div class="icon-wrap">
+                    <i class="fal fa-waveform"></i>
+                </div>
+                <p class="label">Sound Separation</p>
+                <p class="desc">
+                    Using Geometric Source Separation, we separate each localized sound source from each other with
+                    limited interference.
+                </p>
+            </div>
+            <div class="feature">
+                <p class="label">Sound Classification</p>
+                <p class="desc">
+                    By using our stacked generalization ensemble, we classify each separated sound source produced from
+                    GSS.
+                </p>
+                <div class="icon-wrap">
+                    <i class="fal fa-folder-tree"></i>
+                </div>
+            </div>
+        </div>
+        <div class="img-wrap">
+            <img src="Pics/display/18motors/features.png">
+        </div>
+        <div class="right">
             <div class="feature">
                 <p class="label">Speech Recognition</p>
                 <p class="desc">
@@ -233,41 +268,6 @@
                 </p>
                 <div class="icon-wrap">
                     <i class="fal fa-allergies"></i>
-                </div>
-            </div>
-        </div>
-        <div class="img-wrap">
-            <img src="Pics/display/18motors/features.png">
-        </div>
-        <div class="right">
-            <div class="feature">
-                <div class="icon-wrap">
-                    <i class="fal fa-map-marker-alt"></i>
-                </div>
-                <p class="label">Sound Localization</p>
-                <p class="desc">
-                    We perform 3D sound localization with ODAS, which can localize up to four sound sources
-                    simultaneously.
-                </p>
-            </div>
-            <div class="feature">
-                <div class="icon-wrap">
-                    <i class="fal fa-waveform"></i>
-                </div>
-                <p class="label">Sound Separation</p>
-                <p class="desc">
-                    Using Geometric Source Separation, we separate each localized sound source from each other with
-                    limited interference.
-                </p>
-            </div>
-            <div class="feature">
-                <p class="label">Sound Classification</p>
-                <p class="desc">
-                    By using our stacked generalization ensemble, we classify each separated sound source produced from
-                    GSS.
-                </p>
-                <div class="icon-wrap">
-                    <i class="fal fa-folder-tree"></i>
                 </div>
             </div>
         </div>
