@@ -1049,6 +1049,7 @@ hr {
     z-index: -1;
     max-height: 120vh;
     overflow: hidden;
+    min-width: 60vh;
 }
 
 .app .back-wrap img {
@@ -1069,6 +1070,7 @@ hr {
     height: auto;
     position: relative;
     width: 50%;
+    min-width: 60vh;
 }
 
 .app .img-wrap {
@@ -1150,12 +1152,12 @@ hr {
 /*faqs*/
 .faqs {
     padding-top: 8vh;
-    padding-bottom: 5vh;
+    padding-bottom: 8vh;
 }
 
 .faqs .row {
     justify-content: center;
-    margin-top: 2vh;
+    margin-top: 1vh;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -1165,18 +1167,27 @@ hr {
     margin: 2vh 2%;
     min-width: 35vh;
     width: 27%;
+    padding: 1vh 2vh;
+    background-color: #fff;
+    border-radius: 0.75vh;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.faqs .row>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .faqs .label {
-    font-size: 2.3vh;
-    border-bottom: #6d3dff solid 1px;
+    font-size: 1.9vh;
+    /* border-bottom: #6d3dff solid 1px; */
     display: inline-block;
     color: #1B98E0;
     font-family: 'Metropolis';
 }
 
 .faqs .desc {
-    margin-top: 0.5vh;
     font-size: 1.8vh;
 }
 
