@@ -1055,6 +1055,11 @@ hr {
     overflow: hidden;
 }
 
+.app .back-wrap img {
+    width: 100%;
+    min-width: 170vh;
+}
+
 .app .row {
     justify-content: center;
 }
