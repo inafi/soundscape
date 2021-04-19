@@ -765,7 +765,7 @@ hr {
     position: relative;
 }
 
-.prototypes .img-wrap {
+.prototypes .back-wrap {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -778,7 +778,7 @@ hr {
     overflow: hidden;
 }
 
-.prototypes img {
+.prototypes .back-wrap img {
     width: 100%;
     min-width: 170vh;
 }
@@ -1036,10 +1036,6 @@ hr {
     justify-content: center;
     padding-top: 7vh;
     padding-bottom: 7vh;
-    /* background-image: url("../Pics/backgrounds/app.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; */
 }
 
 .app .back-wrap {
