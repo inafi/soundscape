@@ -382,78 +382,233 @@
 
         <div class="faqs" id="faqs">
             <p class="title">Frequently Asked Questions</p>
-            <div class="row grid">
+            <!-- <div class="grid">
                 <div>
-                    <p class="label">How much will it cost?</p>
-                    <p class="desc">
-                        SoundScape will only cost $60. It is printed with inexpensive but flexible TPU filament which
-                        can be scaled to an injection mold for mass-production. Other parts, like the Raspberry Pi and
-                        Teensy 4.0, total to under $45.
-                    </p>
+                    <div>
+                        <p class="label">How much will it cost?</p>
+                        <p class="desc">
+                            SoundScape will only cost $60. It is printed with inexpensive but flexible TPU filament
+                            which
+                            can be scaled to an injection mold for mass-production. Other parts, like the Raspberry Pi
+                            and
+                            Teensy 4.0, total to under $45.
+                        </p>
+                    </div>
                 </div>
                 <div>
-                    <p class="label">What sounds can it classify and how many?</p>
-                    <p class="desc">
-                        SoundScape can classify 50 sounds as well as recognize speech. These include emergency sounds,
-                        such as a baby crying or a car's engine, to common sounds like rain or footsteps. The user can
-                        choose specific sounds to receive a notification for.
-                    </p>
+                    <div>
+                        <p class="label">What sounds can it classify and how many?</p>
+                        <p class="desc">
+                            SoundScape can classify 50 sounds as well as recognize speech. These include emergency
+                            sounds,
+                            such as a baby crying or a car's engine, to common sounds like rain or footsteps. The user
+                            can
+                            choose specific sounds to receive a notification for.
+                        </p>
+                    </div>
                 </div>
                 <div>
-                    <p class="label">Do you plan to use a server going forward?</p>
-                    <p class="desc">
-                        By using bluetooth streaming to transmit audio from the microphone array to the phone, we can
-                        run computational tasks on a phone. We can compile our computer
-                        vision models on CoreML to utilize an iPhone's neural engine.
-                    </p>
+                    <div>
+                        <p class="label">Do you plan to use a server going forward?</p>
+                        <p class="desc">
+                            By using bluetooth streaming to transmit audio from the microphone array to the phone, we
+                            can
+                            run computational tasks on a phone. We can compile our computer
+                            vision models on CoreML to utilize an iPhone's neural engine.
+                        </p>
+                    </div>
                 </div>
                 <div>
-                    <p class="label">How does background noise filtering work?</p>
-                    <p class="desc">
-                        Noise reduction is done by first recording a 0.5 second audio clip from an initial interval of
-                        10 seconds. Then we use fourier transforms to extract the frequencies from the background noise
-                        to produce a mask. Then we use the mask to filter those frequencies from the signal audio.
-                    </p>
+                    <div>
+                        <p class="label">How does background noise filtering work?</p>
+                        <p class="desc">
+                            Noise reduction is done by first recording a 0.5 second audio clip from an initial interval
+                            of
+                            10 seconds. Then we use fourier transforms to extract the frequencies from the background
+                            noise
+                            to produce a mask. Then we use the mask to filter those frequencies from the signal audio.
+                        </p>
+                    </div>
                 </div>
                 <div>
-                    <p class="label">How have you accounted for different environments for sound classification?</p>
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua.
-                    </p>
+                    <div>
+                        <p class="label">How have you accounted for different environments?</p>
+                        <p class="desc">
+                            We do this in two ways: background noise reduction and data augmentation. Dynamically reducing background noise allows us to adapt to a variety of environments. Data augmentation allows our classifier to account for outdoors environments.
+                        </p>
+                    </div>
                 </div>
                 <div>
-                    <p class="label">How is Sound Classification and Speech recognition done in real time?
-                    </p>
-                    <p class="desc">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna
-                        aliqua.
-                    </p>
+                    <div>
+                        <p class="label">Does your system work in real-time?</p>
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna
+                            aliqua.
+                        </p>
+                    </div>
                 </div>
                 <div>
-                    <p class="label">Why do you do sound classification?<p>
+                    <div>
+                        <p class="label">Why do you do sound classification?</p>
+                        <p class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna
+                            aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="label">Where and how have you tested this?</p>
+                        <p class="desc">
+                            We've tested indoors, outdoors, and with varying degrees of background noise. We found
+                            that
+                            indoors, with constant background noise at 20 dB, we could localize sounds up to 35 ft
+                            away.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="label">In your motor pairs, how did you decide when to turn on the red or green
+                            LED?</p>
+                        <p class="desc">
+                            In each pair the red LED is for low frequencies and the green for high. We determined
+                            the
+                            threshold frequency by calculating the average median frequency for each audio sample in
+                            the
+                            ESC-50 dataset.
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="grid">
+                <div>
+                    <div>
+                        <div>
+                            <p class="label">How much will it cost?</p>
                             <p class="desc">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna
-                                aliqua.
+                                SoundScape will only cost $60. It is printed with inexpensive but flexible TPU filament
+                                which
+                                can be scaled to an injection mold for mass-production. Other parts, like the Raspberry
+                                Pi
+                                and
+                                Teensy 4.0, total to under $45.
                             </p>
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <p class="label">Where and how have you tested this?</p>
-                    <p class="desc">
-                        We've tested indoors, outdoors, and with varying degrees of background noise. We found that
-                        indoors, with constant background noise at 20 dB, we could localize sounds up to 35 ft away.
-                    </p>
+                    <div>
+                        <div>
+                            <p class="label">What sounds can it classify and how many?</p>
+                            <p class="desc">
+                                SoundScape can classify 50 sounds as well as recognize speech. These include emergency
+                                sounds,
+                                such as a baby crying or a car's engine, to common sounds like rain or footsteps. The
+                                user
+                                can
+                                choose specific sounds to receive a notification for.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <p class="label">In your motor pairs, how did you decide when to turn on the red or green LED?</p>
-                    <p class="desc">
-                        In each pair the red LED is for low frequencies and the green for high. We determined the
-                        threshold frequency by calculating the average median frequency for each audio sample in the
-                        ESC-50 dataset.
-                    </p>
+                    <div>
+                        <div>
+                            <p class="label">Do you plan to use a server going forward?</p>
+                            <p class="desc">
+                                By using bluetooth streaming to transmit audio from the microphone array to the phone,
+                                we
+                                can
+                                run computational tasks on a phone. We can compile our computer
+                                vision models on CoreML to utilize an iPhone's neural engine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p class="label">How does background noise filtering work?</p>
+                            <p class="desc">
+                                Noise reduction is done by first recording a 0.5 second audio clip from an initial
+                                interval
+                                of
+                                10 seconds. Then we use fourier transforms to extract the frequencies from the
+                                background
+                                noise
+                                to produce a mask. Then we use the mask to filter those frequencies from the signal
+                                audio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p class="label">How have you accounted for different environments?</p>
+                            <p class="desc">
+                                We do this in two ways: background noise reduction and data augmentation. Dynamically
+                                reducing background noise allows us to adapt to a variety of environments. Data
+                                augmentation allows our classifier to account for outdoors environments.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p class="label">Does your system work in real-time?</p>
+                            <p class="desc">
+                                Yes - the entire system has a latency under 0.2 seconds. We do this with GPU
+                                acceleration using CuPy and classifying audio cumulatively, similar to how voice
+                                assistants like Siri work.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p class="label">Why do you do sound classification?</p>
+                            <p class="desc">
+                                People who are deaf and hard of hearing rely on their eyes to identify what made a
+                                sound. However, sound sources are often out of sight, such as a baby crying or a car
+                                incoming behind you. In such cases, our users need to differentiate between "emergency"
+                                sounds - cars, babies - and less urgent ones, like wind or rain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p class="label">Where and how have you tested this?</p>
+                            <p class="desc">
+                                We've tested indoors, outdoors, and with varying degrees of background noise. We found
+                                that
+                                indoors, with constant background noise at 20 dB, we could localize sounds up to 35 ft
+                                away.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <p class="label">In your motor pairs, how did you decide when to turn on the red or green
+                                LED?</p>
+                            <p class="desc">
+                                In each pair the red LED is for low frequencies and the green for high. We determined
+                                the
+                                threshold frequency by calculating the average median frequency for each audio sample in
+                                the
+                                ESC-50 dataset.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -495,6 +650,7 @@
     <div class="foot-wrap">
         <footer>
             <p class="copy" id="contact">
+                Made with <i class="fal fa-heart"></i> by Irfan Nafi <br>
                 Copyright © 2021 SoundScape. All rights reserved.
             </p>
         </footer>

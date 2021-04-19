@@ -1154,46 +1154,40 @@ hr {
 .faqs {
     padding-top: 8vh;
     padding-bottom: 8vh;
+    width: 75%;
+    margin: auto;
 }
 
-.faqs .row {
-    justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.faqs .row>div {
-    /* height: auto; */
-    margin: 2vh;
-    min-width: 35vh;
-    width: 29%;
-    padding: 2vh;
-    background-color: #fff;
+.faqs .grid div>div>div {
     border-radius: 0.75vh;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
-    transition: 0.3s;
-    cursor: default;
     display: inline-block;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+    background-color: #fff;
+    transition: 0.3s;
+    width: 100%;
+    cursor: default;
+    padding: 2vh;
 }
 
-.faqs .row>div:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 2px 3px 8px;
+.faqs .grid div>div>div:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
 }
 
 .faqs .label {
     font-size: 1.9vh;
-    /* border-bottom: #6d3dff solid 1px; */
     color: #1B98E0;
     font-family: 'Metropolis';
 }
 
 .faqs .desc {
-    margin-top: .3vh;
     font-size: 1.7vh;
+    color: #000;
+    margin-top: 0.5vh;
 }
 
-
-
+.grid>div>div {
+    padding: 2vh;
+}
 
 /*about*/
 .about {
@@ -1363,3 +1357,216 @@ nav .wrap-icon {
     }
 }
 
+/*Flex Masonary*/
+.flexmasonry {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+}
+
+.flexmasonry-item {
+    width: 100%;
+}
+
+.flexmasonry-cols-2 .flexmasonry-item {
+    width: 50%;
+}
+
+.flexmasonry-cols-3 .flexmasonry-item {
+    width: 33.333%;
+}
+
+.flexmasonry-cols-4 .flexmasonry-item {
+    width: 25%;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item {
+    width: 20%;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item {
+    width: 16.666%;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item {
+    width: 14.285%;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item {
+    width: 12.5%;
+}
+
+.flexmasonry-cols-2 .flexmasonry-item:nth-child(2n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-2 .flexmasonry-item:nth-child(2n) {
+    order: 2;
+}
+
+.flexmasonry-cols-3 .flexmasonry-item:nth-child(3n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-3 .flexmasonry-item:nth-child(3n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-3 .flexmasonry-item:nth-child(3n) {
+    order: 3;
+}
+
+.flexmasonry-cols-4 .flexmasonry-item:nth-child(4n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-4 .flexmasonry-item:nth-child(4n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-4 .flexmasonry-item:nth-child(4n+3) {
+    order: 3;
+}
+
+.flexmasonry-cols-4 .flexmasonry-item:nth-child(4n) {
+    order: 4;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item:nth-child(5n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item:nth-child(5n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item:nth-child(5n+3) {
+    order: 3;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item:nth-child(5n+4) {
+    order: 4;
+}
+
+.flexmasonry-cols-5 .flexmasonry-item:nth-child(5n) {
+    order: 5;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n+3) {
+    order: 3;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n+4) {
+    order: 4;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n+5) {
+    order: 5;
+}
+
+.flexmasonry-cols-6 .flexmasonry-item:nth-child(6n) {
+    order: 6;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+3) {
+    order: 3;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+4) {
+    order: 4;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+5) {
+    order: 5;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n+6) {
+    order: 6;
+}
+
+.flexmasonry-cols-7 .flexmasonry-item:nth-child(7n) {
+    order: 7;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+1) {
+    order: 1;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+2) {
+    order: 2;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+3) {
+    order: 3;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+4) {
+    order: 4;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+5) {
+    order: 5;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+6) {
+    order: 6;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n+7) {
+    order: 7;
+}
+
+.flexmasonry-cols-8 .flexmasonry-item:nth-child(8n) {
+    order: 8;
+}
+
+.flexmasonry-break {
+    content: "";
+    flex-basis: 100%;
+    width: 0 !important;
+    margin: 0;
+}
+
+.flexmasonry-break-1 {
+    order: 1;
+}
+
+.flexmasonry-break-2 {
+    order: 2;
+}
+
+.flexmasonry-break-3 {
+    order: 3;
+}
+
+.flexmasonry-break-4 {
+    order: 4;
+}
+
+.flexmasonry-break-5 {
+    order: 5;
+}
+
+.flexmasonry-break-6 {
+    order: 6;
+}
+
+.flexmasonry-break-7 {
+    order: 7;
+}

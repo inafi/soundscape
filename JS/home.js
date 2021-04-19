@@ -156,13 +156,13 @@ function initialize() {
     }, 100);
 
     //Flex Masonary
-    // FlexMasonry.init('.faqs .grid', {
-    //     breakpointCols: {
-    //         'min-width: 160vh': 3,
-    //         'min-width: 140vh': 2,
-    //         'min-width: 100vh': 2,
-    //         'min-width: 30vh': 1,
-    //     }
-    // });
+    FlexMasonry.init('.faqs .grid', {
+        breakpointCols: {
+            'min-width: 160vh': 3,
+            'min-width: 140vh': 2,
+            'min-width: 100vh': 2,
+            'min-width: 30vh': 1,
+        }
+    });
 }
 $(initialize)
