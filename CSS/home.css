@@ -553,7 +553,7 @@ hr {
 
 /*product*/
 .product {
-    padding: 12vh 3% 10vh;
+    padding: 17vh 3% 10vh;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -565,7 +565,7 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    top: 4vh;
+    top: 9vh;
 }
 
 .product .img-wrap {
