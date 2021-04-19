@@ -130,7 +130,6 @@ nav span:hover {
 
 nav img {
     height: 5.5vh;
-    background-color: #fff;
     position: fixed;
     top: 0.25vh;
     left: 0;
@@ -268,7 +267,7 @@ hr {
     overflow: hidden;
     padding: 7vh 8% 0vh;
     width: 100%;
-    background-image: url('../Pics/back.png');
+    background-image: url('../Pics/backgrounds/landing.png');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -1037,6 +1036,23 @@ hr {
     justify-content: center;
     padding-top: 7vh;
     padding-bottom: 7vh;
+    /* background-image: url("../Pics/backgrounds/app.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+
+.app .back-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    max-height: 120vh;
+    overflow: hidden;
 }
 
 .app .row {
