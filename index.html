@@ -492,12 +492,14 @@
                 </div>
                 <div>
                     <div>
-                        <p class="label">How do you track sound sources?</p>
+                        <p class="label">What made you choose the four base models?</p>
                         <p class="desc">
-                            Using localization data from the SRP-PHAT-HSDA model, we know the direction of arrival for
-                            each sound source. We then determine if the sound source is one of four states: static,
-                            constant velocity, accelerating, or a new source. Then we use a 3D Kalman filter, called
-                            M3K, to accurately track the sound source over time.
+                            We chose the models based on three criteria: accuracy, run-time, and diversity in terms of
+                            classification methods. Our goal was to incorporate each model into the meta-classifier, so
+                            having variation in terms of how they classify audio data increased the accuracy of the
+                            meta-classifier. The 4 models we chose, Densenet, Resnet18, Cnn10, and Talnet, had some of
+                            the highest accuracies on other sound classification datasets such as ESCS10 and the Urban8k
+                            dataset.
                         </p>
                     </div>
                 </div>
@@ -516,14 +518,12 @@
                 </div>
                 <div>
                     <div>
-                        <p class="label">What made you choose the four base models?</p>
+                        <p class="label">How do you track sound sources?</p>
                         <p class="desc">
-                            We chose the models based on three criteria: accuracy, run-time, and diversity in terms of
-                            classification methods. Our goal was to incorporate each model into the meta-classifier, so
-                            having variation in terms of how they classify audio data increased the accuracy of the
-                            meta-classifier. The 4 models we chose, Densenet, Resnet18, Cnn10, and Talnet, had some of
-                            the highest accuracies on other sound classification datasets such as ESCS10 and the Urban8k
-                            dataset.
+                            Using localization data from the SRP-PHAT-HSDA model, we know the direction of arrival for
+                            each sound source. We then determine if the sound source is one of four states: static,
+                            constant velocity, accelerating, or a new source. Then we use a 3D Kalman filter, called
+                            M3K, to accurately track the sound source over time.
                         </p>
                     </div>
                 </div>
