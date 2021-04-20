@@ -1058,10 +1058,11 @@ hr {
     position: relative;
     width: 50%;
     height: auto;
-    overflow: hidden;
+    min-width: 55vh;
 }
 
 .app .img-wrap img {
+    min-width: 60vh;
     width: 65vh;
     max-width: 95%;
     display: block;
@@ -1139,7 +1140,7 @@ hr {
 
 .bottompage .back-wrap img {
     width: 100%;
-    min-width: 170vh;
+    min-width: 120vh;
 }
 
 /*faqs*/
@@ -1155,12 +1156,13 @@ hr {
 .faqs .grid div>div {
     border-radius: 0.75vh;
     display: inline-block;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 3px 3px;
     background-color: #fff;
     transition: 0.3s;
     width: 100%;
     cursor: pointer;
     padding: 2vh;
+    overflow: hidden;
 }
 
 .faqs .grid div>div:hover {
@@ -1178,6 +1180,7 @@ hr {
     color: #000;
     margin-top: 0.5vh;
     display: none;
+    transition: 0.3s;
 }
 
 .grid .flexmasonry-item {
