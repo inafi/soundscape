@@ -118,7 +118,7 @@
                 <i class="fal fa-photo-video"></i>
                 <p class="label">Showcase Video</p>
                 <div class="overlay">
-                    <iframe src="" name="https://www.youtube.com/embed/zJkN6GqvM40?enablejsapi=1" allowfullscreen="true"
+                    <iframe src="" name="https://www.youtube.com/embed/17MLrzYd29o?enablejsapi=1" allowfullscreen="true"
                         mozallowfullscreen="true" webkitallowfullscreen="true" class="vid">
                     </iframe>
                 </div>
@@ -194,9 +194,10 @@
             <div class="text" style="background-image: linear-gradient(to bottom right, #44cc89, #3971fb)">
                 <p class="label" style="color: #fcbc3c;">Real-Time Sound Classification</p>
                 <p class="desc" style="color: #000;">
-                    We use a combination of state of the art computer vision models, optimized to run on our device.
-                    Through our custom algorithms, we are able to increase the accuracy of the classifications by
-                    deploying machine learning techniques.
+                    SoundScape can classify environmental sounds with an accuracy of 93.4%. We do this using an ensemble
+                    of Pytorch models trained on an augmented dataset. This lets us classify sounds nearly anywhere, be
+                    it indoors, outdoors, and noisy environments. We do this under 0.2 seconds of latency, as we use a
+                    GPU accelerated environment.
                 </p>
             </div>
         </div>
@@ -304,10 +305,10 @@
             <div class="text" style="background-image: linear-gradient(to top left, #f52d53, #e09ce2)">
                 <p class="label" style="color: #303548;">State of the Art Sound Localization</p>
                 <p class="desc">
-                    We use a combination of state of the art computer vision models, optimized to run on our device.
-                    Through our custom
-                    algorithms, we are able to increase the accuracy of the classifications by deploying machine
-                    learning techniques.
+                    We used the ODAS system which ulitizes Steered Response with Phase Transform to localize up to 4
+                    independent sound sources in 3D space, simultaneously. We then track sound sources using M3K, a 3D
+                    Kalman filter,
+                    to ensure long term position accuracy.
                 </p>
             </div>
             <div>
@@ -367,8 +368,10 @@
                 <p class="label" style="color: #00cdcd;">Compact and Manufacturable Design</p>
                 <p class="desc">
                     Through our various prototypes, we strove to make a compact and comfrotable design that
-                    users can use in their everyday lives. However, in order to make our device accessible, we had to make an easy to manufacture design
-                    which we accomplished through a simple design made from flexible TPU filament, allowing it to easily be scaled up.
+                    users can use in their everyday lives. However, in order to make our device accessible, we had to
+                    make an easy to manufacture design
+                    which we accomplished through a simple design made from flexible TPU filament, allowing it to easily
+                    be scaled up.
                 </p>
             </div>
         </div>
