@@ -8,6 +8,7 @@
 }
 
 @media only screen and (orientation:portrait) {
+
     .features,
     .ourtimeline,
     .about,
@@ -29,12 +30,28 @@
     }
 
     .landing .title {
-        font-size: 10vh;
+        font-size: 7vh;
         line-height: 10vh;
     }
 
     .landing .text-wrap {
         padding-bottom: 2vh;
+    }
+
+    .overlay {
+        max-height: 90vh;
+        width: 85%;
+        padding: 1vh;
+    }
+
+    .overlay .title {
+        font-size: 2.4vh;
+        width: 90%;
+    }
+
+    .overlay .desc {
+        width: 90%;
+        font-size: 2vh;
     }
 
     .features .label {
@@ -64,13 +81,16 @@
     }
 
     .product {
-        padding: 2vh 3%;
+        padding: 15vh 3% 2vh;
+    }
+
+    .product .title {
+        top: 6vh;
     }
 
     .product img {
         min-width: 0;
         width: 80%;
-        margin-bottom: 3vh;
     }
 
     .demo {
@@ -96,11 +116,11 @@
     .prototypes .slick .item .bg.v2 {
         height: 45vh;
     }
-    
+
     .prototypes .slick .item .bg.v3 {
         height: 48vh;
     }
-    
+
     .prototypes .slick .slick-center .bg {
         min-width: 40vh;
         height: 45vh;
@@ -117,7 +137,7 @@
         margin: auto;
     }
 
-    .app .text {
+    .app .text-wrap {
         justify-content: center
     }
 
@@ -129,7 +149,15 @@
     }
 
     .app .img-wrap {
-        display: none;
+        min-width: 45vh;
+    }
+
+    .app .img-wrap img {
+        min-width: 40vh;
+    }
+
+    .app .desc {
+        min-width: 40vh;
     }
 
     .demo .img-wrap {
@@ -193,5 +221,9 @@
 @media only screen and (orientation:landscape) {
     .cad {
         animation: none;
+    }
+
+    .overlay {
+        max-height: 80vh;
     }
 }

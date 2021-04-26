@@ -158,7 +158,12 @@ function initialize() {
     //Flex Masonary
     $(window).on("resize", function () {
         FlexMasonry.refreshAll()
-    })
+    });
+    if (isMobile) {
+        $(window).on("orientationchange", function () {
+            location.reload();
+        });
+    }
 
     FlexMasonry.init('.faqs .grid', {
         responsive: true,
@@ -169,8 +174,7 @@ function initialize() {
         }
     });
 
-
-    $(".grid > div > div").click(function() {
+    $(".grid > div > div").click(function () {
         $(this).find(".desc").toggle();
         FlexMasonry.refreshAll()
     })
