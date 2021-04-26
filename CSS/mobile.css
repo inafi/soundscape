@@ -113,12 +113,8 @@
         width: 40vh;
     }
 
-    .prototypes .slick .item .bg.v2 {
-        height: 45vh;
-    }
-
-    .prototypes .slick .item .bg.v3 {
-        height: 48vh;
+    .prototypes .slick .item .bg.v1 {
+        height: 50vh;
     }
 
     .prototypes .slick .slick-center .bg {
